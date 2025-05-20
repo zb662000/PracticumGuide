@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:id="@+id/main"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:padding="16dp">
+
+<EditText
+    android:id="@+id/editName"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:hint="Item Name"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"/>
+
+<EditText
+    android:id="@+id/editQuantity"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:hint="Quantity"
+    android:inputType="number"
+    app:layout_constraintTop_toBottomOf="@id/editName"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="12dp"/>
+
+<Button
+    android:id="@+id/btnAdd"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Add to Packing List"
+    app:layout_constraintTop_toBottomOf="@id/editQuantity"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="24dp"/>
+
+<Button
+    android:id="@+id/btnNext"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Go to Screen Two"
+    app:layout_constraintTop_toBottomOf="@id/btnAdd"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp"/>
+
+<Button
+    android:id="@+id/btnExit"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:text="Exit App"
+    app:layout_constraintTop_toBottomOf="@id/btnNext"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    android:layout_marginTop="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
